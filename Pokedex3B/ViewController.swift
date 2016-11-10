@@ -11,7 +11,8 @@ import UIKit
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     let reuseIdentifier = "cell"
-    var items = ["1","2","3","4","5","6"]
+    var items = ["steve","fred","wilma","barney","jose","sophie"]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +33,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! PokeCollectionViewCell
         cell.myLabel.text = self.items[indexPath.item]
-        cell.backgroundColor = UIColor.cyan
+        collectionView.backgroundColor = UIColor.clear
         
         return cell
         

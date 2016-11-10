@@ -15,7 +15,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tww-kT-7Sd">
@@ -24,7 +24,7 @@
                                     <constraint firstAttribute="height" constant="65" id="KB2-FY-k8j"/>
                                 </constraints>
                             </view>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="dCd-FE-6D6">
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="dCd-FE-6D6">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="OSA-bT-Kjw"/>
                                 </constraints>
@@ -52,16 +52,26 @@
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" alpha="0.75" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="EKp-Nh-dni">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="69" id="xc5-51-K6U"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                         </view>
+                                        <color key="backgroundColor" red="0.65098039215686276" green="0.71764705882352942" blue="0.74509803921568629" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="SMb-6S-hpe" secondAttribute="bottom" id="4TO-zW-UHq"/>
+                                            <constraint firstItem="EKp-Nh-dni" firstAttribute="top" secondItem="q1m-Gq-xc1" secondAttribute="top" id="PKy-Nz-PMA"/>
+                                            <constraint firstItem="EKp-Nh-dni" firstAttribute="leading" secondItem="q1m-Gq-xc1" secondAttribute="leading" id="SWs-8W-Cf9"/>
                                             <constraint firstAttribute="trailing" secondItem="SMb-6S-hpe" secondAttribute="trailing" id="Wjs-la-ppD"/>
                                             <constraint firstItem="SMb-6S-hpe" firstAttribute="top" secondItem="q1m-Gq-xc1" secondAttribute="top" constant="69" id="e7J-wx-R7M"/>
                                             <constraint firstItem="SMb-6S-hpe" firstAttribute="leading" secondItem="q1m-Gq-xc1" secondAttribute="leading" id="lBh-8a-bbW"/>
+                                            <constraint firstAttribute="trailing" secondItem="EKp-Nh-dni" secondAttribute="trailing" id="nuD-no-yEN"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="myLabel" destination="SMb-6S-hpe" id="YLT-oG-SMc"/>
+                                            <outlet property="thumbImg" destination="EKp-Nh-dni" id="3Oe-Ik-pYX"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -96,6 +106,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="4" width="120" height="120"/>
         <image name="Dg4HEs" width="1024" height="640"/>
     </resources>
 </document>
