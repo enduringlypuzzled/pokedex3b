@@ -11,26 +11,54 @@ import UIKit
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     let reuseIdentifier = "cell"
-    var items = ["steve","fred","wilma","barney","jose","sophie"]
-    
     @IBOutlet weak var collection:UICollectionView!
+    
+    var pokemon = [Pokemon]()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        //collection.datasource = self
+        //collection.delegate = self
+        
+        parsePokemonCSV()
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    // Function to get information from pokemon.csv file
+    func parsePokemonCSV(){
+        let path = Bundle.main.path(forResource: "pokemon", ofType: "csv")!
+        
+        do {
+            let csv = try CSV(contentsOfURL: path)
+            let rows = csv.rows
+            print(rows)
+            
+            //new stuff
+            for row in rows {
+                let pokeId = Int(row["id"]!)!
+                let name = String(row["identifier"]!)!
+                
+                let poke = Pokemon(name: name, pokedexId: pokeId)
+                pokemon.append(poke)
+            } // end for
+    
+        } catch let err as NSError {
+            print(err.debugDescription)
+        }
+    
     }
+    
+  
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? PokeCollectionViewCell {
-            cell.myLabel.text = self.items[indexPath.item]
-            collectionView.backgroundColor = UIColor.clear
+            //let pokemon = Pokemon(name: "Pokemon", pokedexId:indexPath.row)
+            let poke = pokemon[indexPath.row]
+            
+            cell.configureCell(poke)
             return cell
         } else {
             return UICollectionViewCell()
@@ -40,14 +68,13 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
 
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return pokemon.count
     }
     
     
-    // new stuff -----------------------
-   /* func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        x
-    }*/
+     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
