@@ -13,6 +13,7 @@
 		0A1630F01DD3A2A200E688E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A1630EF1DD3A2A200E688E5 /* Assets.xcassets */; };
 		0A1630F31DD3A2A200E688E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A1630F11DD3A2A200E688E5 /* LaunchScreen.storyboard */; };
 		0A1630FB1DD3AB5A00E688E5 /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 0A1630FA1DD3AB5A00E688E5 /* pokemon.csv */; };
+		0ADD442D1DD4D16B00548543 /* PokeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADD442C1DD4D16B00548543 /* PokeCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0A1630F21DD3A2A200E688E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A1630F41DD3A2A200E688E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A1630FA1DD3AB5A00E688E5 /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
+		0ADD442C1DD4D16B00548543 /* PokeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				0A1630FA1DD3AB5A00E688E5 /* pokemon.csv */,
 				0A1630F11DD3A2A200E688E5 /* LaunchScreen.storyboard */,
 				0A1630F41DD3A2A200E688E5 /* Info.plist */,
+				0ADD442C1DD4D16B00548543 /* PokeCollectionViewCell.swift */,
 			);
 			path = Pokedex3B;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ADD442D1DD4D16B00548543 /* PokeCollectionViewCell.swift in Sources */,
 				0A1630EB1DD3A2A200E688E5 /* ViewController.swift in Sources */,
 				0A1630E91DD3A2A200E688E5 /* AppDelegate.swift in Sources */,
 			);
