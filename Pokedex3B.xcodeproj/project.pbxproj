@@ -16,6 +16,7 @@
 		0A8C4E0C1DD4F7BC0015A70B /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 0A8C4E0B1DD4F7BC0015A70B /* pokemon.csv */; };
 		0A8C4E101DD4FB690015A70B /* music-note.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A8C4E0F1DD4FB690015A70B /* music-note.jpg */; };
 		0A8C4E121DD4FF130015A70B /* supermario.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0A8C4E111DD4FF130015A70B /* supermario.mp3 */; };
+		0A9752A71DDB4079009060D8 /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9752A61DDB4079009060D8 /* PokemonDetailVC.swift */; };
 		0ADA9B0F1DD4D7A9006D5C28 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADA9B0E1DD4D7A9006D5C28 /* Pokemon.swift */; };
 		0ADA9B121DD4EF06006D5C28 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADA9B111DD4EF06006D5C28 /* csv.swift */; };
 		0ADD442D1DD4D16B00548543 /* PokeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADD442C1DD4D16B00548543 /* PokeCollectionViewCell.swift */; };
@@ -33,6 +34,7 @@
 		0A8C4E0B1DD4F7BC0015A70B /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
 		0A8C4E0F1DD4FB690015A70B /* music-note.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "music-note.jpg"; sourceTree = "<group>"; };
 		0A8C4E111DD4FF130015A70B /* supermario.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = supermario.mp3; sourceTree = "<group>"; };
+		0A9752A61DDB4079009060D8 /* PokemonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
 		0ADA9B0E1DD4D7A9006D5C28 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		0ADA9B111DD4EF06006D5C28 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 		0ADD442C1DD4D16B00548543 /* PokeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				0A1630EA1DD3A2A200E688E5 /* ViewController.swift */,
+				0A9752A61DDB4079009060D8 /* PokemonDetailVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				0ADD442D1DD4D16B00548543 /* PokeCollectionViewCell.swift in Sources */,
 				0ADA9B0F1DD4D7A9006D5C28 /* Pokemon.swift in Sources */,
 				0A1630EB1DD3A2A200E688E5 /* ViewController.swift in Sources */,
+				0A9752A71DDB4079009060D8 /* PokemonDetailVC.swift in Sources */,
 				0A1630E91DD3A2A200E688E5 /* AppDelegate.swift in Sources */,
 				0ADA9B121DD4EF06006D5C28 /* csv.swift in Sources */,
 			);
