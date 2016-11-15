@@ -398,6 +398,20 @@
                             <constraint firstAttribute="trailingMargin" secondItem="X9v-fu-V3s" secondAttribute="trailing" constant="8" id="ueq-7n-aSp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="attackLabel" destination="oVf-bg-NXR" id="Ji3-OY-yWw"/>
+                        <outlet property="currentevoImage" destination="jd7-C6-9hJ" id="mAd-Ur-SAU"/>
+                        <outlet property="defenceLabel" destination="dad-p5-aDE" id="OYV-0q-Nw4"/>
+                        <outlet property="descriptionLabel" destination="Qqs-FK-yxB" id="xrZ-HU-MAZ"/>
+                        <outlet property="evoLabel" destination="Cbn-X8-8pF" id="NTp-Yf-qCE"/>
+                        <outlet property="heightLabel" destination="39d-4d-iCK" id="AMx-jo-BLO"/>
+                        <outlet property="mainImg" destination="eei-8h-nRk" id="rYd-Xl-YqP"/>
+                        <outlet property="nameLabel" destination="XV5-Ra-dUS" id="5QK-XQ-Y0P"/>
+                        <outlet property="nextevoImage" destination="jhN-x9-uoR" id="1hP-jS-IUR"/>
+                        <outlet property="pokedexLabel" destination="Uku-to-8gY" id="2Ti-gX-73R"/>
+                        <outlet property="typeLabel" destination="Zah-aJ-8FL" id="FhC-WR-wcH"/>
+                        <outlet property="weightLabel" destination="vzk-O8-VPm" id="7Kg-OG-pLF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fvq-3n-k2W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
